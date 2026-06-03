@@ -1,0 +1,129 @@
+\begin{thebibliography}{16}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Dalvi et~al.(2021)Dalvi, Jansen, Tafjord, Xie, Smith, Pipatanangkura,
+  and Clark]{Dalvi2021}
+Bhavana Dalvi, Peter Jansen, Oyvind Tafjord, Zhengnan Xie, Hannah Smith,
+  Leighanna Pipatanangkura, and Peter Clark.
+\newblock Explaining answers with entailment trees.
+\newblock In \emph{Proceedings of the 2021 Conference on Empirical Methods in
+  Natural Language Processing}, pages 7358--7370, 2021.
+\newblock \doi{10.18653/v1/2021.emnlp-main.585}.
+
+\bibitem[de~Moura and Ullrich(2021)]{Moura2021}
+Leonardo de~Moura and Sebastian Ullrich.
+\newblock The {Lean} 4 theorem prover and programming language.
+\newblock In \emph{Automated Deduction -- CADE 28}, pages 625--635, 2021.
+\newblock \doi{10.1007/978-3-030-79876-5_37}.
+
+\bibitem[Feng(2025)]{Feng2025}
+A.~Feng.
+\newblock Counterfactual probing for hallucination detection in large language
+  models.
+\newblock \emph{arXiv preprint}, 2025.
+
+\bibitem[Green and Swets(1966)]{Green1966}
+David~M. Green and John~A. Swets.
+\newblock \emph{Signal Detection Theory and Psychophysics}.
+\newblock Wiley, New York, 1966.
+
+\bibitem[Hoveyda et~al.(2026)Hoveyda, Bizer, and Gemulla]{Hoveyda2026}
+M.~Hoveyda, C.~Bizer, and R.~Gemulla.
+\newblock {OrLog}: Decoupled predicate plausibility for open-domain logical
+  reasoning.
+\newblock In \emph{Proceedings of the AAAI Conference on Artificial
+  Intelligence}, 2026.
+
+\bibitem[Jiang et~al.(2023)Jiang, Xu, Gao, Sun, Liu, Dwivedi-Yu, Yang, Callan,
+  and Neubig]{Jiang2023}
+Zhengbao Jiang, Frank~F. Xu, Luyu Gao, Zhiqing Sun, Qian Liu, Jane Dwivedi-Yu,
+  Yiming Yang, Jamie Callan, and Graham Neubig.
+\newblock Active retrieval augmented generation.
+\newblock In \emph{Proceedings of the 2023 Conference on Empirical Methods in
+  Natural Language Processing}, pages 7969--7992, 2023.
+\newblock \doi{10.48550/arXiv.2305.06983}.
+
+\bibitem[Kirtania et~al.(2024)Kirtania, Feng, and Sinha]{Kirtania2024}
+S.~Kirtania, A.~Feng, and R.~Sinha.
+\newblock Logic-lm++: Multi-step refinement for symbolic integration in large
+  language models.
+\newblock In \emph{Proceedings of the 2024 Joint International Conference on
+  Computational Linguistics, Language Resources and Evaluation (LREC-COLING
+  2024)}, 2024.
+
+\bibitem[Lewis et~al.(2020)Lewis, Perez, Piktus, Petroni, Karpukhin, Goyal,
+  K{\"u}ttler, Lewis, tau Yih, Rockt{\"a}schel, Riedel, and Kiela]{Lewis2020}
+Patrick Lewis, Ethan Perez, Aleksandra Piktus, Fabio Petroni, Vladimir
+  Karpukhin, Naman Goyal, Heinrich K{\"u}ttler, Mike Lewis, Wen tau Yih, Tim
+  Rockt{\"a}schel, Sebastian Riedel, and Douwe Kiela.
+\newblock Retrieval-augmented generation for knowledge-intensive {NLP} tasks.
+\newblock In \emph{Advances in Neural Information Processing Systems}, 2020.
+
+\bibitem[Lyu et~al.(2024)Lyu, Havaldar, Stein, Zhang, Rao, Wong, Apidianaki,
+  and Callison-Burch]{Lyu2024}
+Qing Lyu, Shreya Havaldar, Adam Stein, Li~Zhang, Delip Rao, Eric Wong, Marianna
+  Apidianaki, and Chris Callison-Burch.
+\newblock Calibrating large language models using their generations.
+\newblock \emph{arXiv preprint arXiv:2403.08211}, 2024.
+
+\bibitem[Olausson et~al.(2023)Olausson, Gu, Lipkin, Zhang, Solar-Lezama,
+  Tenenbaum, and Levy]{Olausson2023}
+Theo~X. Olausson, Alex Gu, Benjamin Lipkin, Cedegao~E. Zhang, Armando
+  Solar-Lezama, Josh Tenenbaum, and Roger Levy.
+\newblock Linc: A neurosymbolic approach for logical reasoning by combining
+  language models with first-order logic provers.
+\newblock In \emph{Proceedings of the 2023 Conference on Empirical Methods in
+  Natural Language Processing}, pages 5153--5176, 2023.
+\newblock \doi{10.18653/v1/2023.emnlp-main.313}.
+
+\bibitem[Pan et~al.(2023)Pan, Albalak, Wang, and Wang]{Pan2023}
+Liangming Pan, Alon Albalak, Xinyi Wang, and William~Yang Wang.
+\newblock Logic-lm: Empowering large language models with symbolic solvers for
+  faithful logical reasoning.
+\newblock In \emph{Proceedings of the 2023 Conference on Empirical Methods in
+  Natural Language Processing}, 2023.
+\newblock \doi{10.48550/arXiv.2305.12295}.
+
+\bibitem[Putra et~al.(2026)Putra, Maharani, and Harahap]{Putra2026}
+I.~G.~N. Putra, S.~Maharani, and Y.~Harahap.
+\newblock {NL2LOGIC}: Neuro-symbolic natural language to first-order logic
+  translation.
+\newblock In \emph{Proceedings of the 2026 Conference of the European Chapter
+  of the Association for Computational Linguistics}, 2026.
+
+\bibitem[Raedt et~al.(2007)Raedt, Kimmig, and Toivonen]{Raedt2007}
+Luc~De Raedt, Angelika Kimmig, and Hannu Toivonen.
+\newblock {ProbLog}: A probabilistic {Prolog} and its application in link
+  discovery.
+\newblock In \emph{Proceedings of the Twentieth International Joint Conference
+  on Artificial Intelligence}, pages 2468--2473, 2007.
+
+\bibitem[Tafjord et~al.(2021)Tafjord, Dalvi, and Clark]{Tafjord2020}
+Oyvind Tafjord, Bhavana Dalvi, and Peter Clark.
+\newblock Proofwriter: Generating implications, proofs, and abductive
+  statements over natural language.
+\newblock In \emph{Findings of the Association for Computational Linguistics:
+  ACL-IJCNLP 2021}, pages 3621--3634, 2021.
+\newblock \doi{10.18653/v1/2021.findings-acl.317}.
+
+\bibitem[Wei et~al.(2022)Wei, Wang, Schuurmans, Bosma, Chi, Xia, Le, and
+  Zhou]{Wei2022}
+Jason Wei, Xuezhi Wang, Dale Schuurmans, Maarten Bosma, Ed~H. Chi, Fei Xia,
+  Quoc Le, and Denny Zhou.
+\newblock Chain-of-thought prompting elicits reasoning in large language
+  models.
+\newblock In \emph{Advances in Neural Information Processing Systems}, 2022.
+
+\bibitem[Zheng et~al.(2021)Zheng, Guha, Anderson, Henderson, and Ho]{Zheng2021}
+Lucia Zheng, Neel Guha, Brandon~R. Anderson, Peter Henderson, and Daniel~E. Ho.
+\newblock When does pretraining help? {Assessing} self-supervised learning for
+  law and the {CaseHOLD} dataset.
+\newblock In \emph{Proceedings of the Eighteenth International Conference on
+  Artificial Intelligence and Law}, 2021.
+\newblock \doi{10.1145/3462757.3466088}.
+
+\end{thebibliography}
