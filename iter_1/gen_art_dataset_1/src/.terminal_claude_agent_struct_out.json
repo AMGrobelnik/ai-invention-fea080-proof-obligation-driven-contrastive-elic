@@ -1,0 +1,15 @@
+{
+  "title": "POCE Benchmark: EntailmentBank T2/T3 + ProofWriter",
+  "layman_summary": "Collects reasoning examples with proof trees that mark which facts are stated outright versus inferred from premises.",
+  "summary": "Four POCE benchmark splits (1,600 examples) from EntailmentBank Tasks 2/3 (allenai/entailment_bank slots format via GitHub API) and ProofWriter depth-3ext-NatLang and NatLang variants (tasksource/proofwriter on HuggingFace). Each example has premise sentences, a hypothesis/query, a gold label (true/false/unknown), and a multi-hop proof tree. A heuristic tagger (no LLM) derives explicit_predicates — proof-leaf sentences from the triples dictionary — and implicit_predicates — intermediate intN conclusions absent from the context. EntailmentBank Task 3 cross-references Task 1 gold proofs to surface world-knowledge gaps (sentences required by proof but missing from Task 3 context). For ProofWriter, tripleN references are explicit and derived conclusions are implicit. Overall: 73% of examples have at least one implicit predicate, average 2.66 implicit per example, average proof depth 3.96. Splits: entailmentbank_task2 (400 examples, avg depth 4.6, avg 5.2 implicit/example, distractor sentences), entailmentbank_task3 (400 examples, avg depth 4.6, avg 3.7 implicit/example, world-knowledge gaps), proofwriter_depth3 (400 examples, avg depth 3.2, True/False/Unknown labels), proofwriter_depth5 (400 examples, avg depth 3.4, natural language variant). Uniform schema across all splits for POCE pipeline consumption. Validated against exp_sel_data_out schema. Outputs: full_data_out.json (5.2 MB), mini_data_out.json (48 KB, 3 per split), preview_data_out.json (14 KB).",
+  "out_expected_files": {
+    "script": "data.py",
+    "datasets": [
+      {
+        "full": ["full_data_out.json"],
+        "mini": "mini_data_out.json",
+        "preview": "preview_data_out.json"
+      }
+    ]
+  }
+}

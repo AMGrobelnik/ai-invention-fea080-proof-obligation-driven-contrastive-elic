@@ -1,0 +1,182 @@
+{
+  "metadata": {
+    "description": "POCE benchmark datasets: EntailmentBank T2/T3 + ProofWriter depth≥3",
+    "version": "1.0",
+    "stats": {
+      "total_examples": 1600,
+      "examples_with_implicit_predicates": 1176,
+      "avg_implicit_per_example": 2.663,
+      "avg_proof_depth": 3.964
+    }
+  },
+  "datasets": [
+    {
+      "dataset": "entailmentbank_task2",
+      "examples": [
+        {
+          "input": "Premises:\nsent1: melting is a kind of phase change sent2: phase changes change the arrangement of molecules in a substance / in a sample sent3: an ice cube is a kind of object sent4: melting is when s...",
+          "output": "Label: true\nProof: sent17 & sent6 -> int1: a pan is a thermal conductor; sent10 & sent14 -> int2: the flame gives off heat; int2 & sent16 -> int3: the flame is a source of heat; int3 & sent18 & sent7 ...",
+          "metadata_id": "eb_task_2_train_Mercury_SC_413077",
+          "metadata_benchmark": "entailmentbank",
+          "metadata_task": "task_2",
+          "metadata_gold_label": "true",
+          "metadata_proof_depth": 12,
+          "metadata_annotation_status": "ok",
+          "metadata_num_explicit": 17,
+          "metadata_num_implicit": 12,
+          "metadata_source_split": "train",
+          "metadata_explicit_predicates": "[\"a flame are a part of a fire\", \"fire gives off heat\", \"an ice cube is placed in the pan\", \"a source of something gives off that something\", \"a pan is made of metal for cooking\", \"if something is pla...",
+          "metadata_implicit_predicates": "[\"a pan is a thermal conductor\", \"the flame gives off heat\", \"the flame is a source of heat\", \"the pan is exposed to a source of heat\", \"the pan will become hot\", \"the hot pan is a kind of hot object\"...",
+          "metadata_proof_tree": "sent17 & sent6 -> int1: a pan is a thermal conductor; sent10 & sent14 -> int2: the flame gives off heat; int2 & sent16 -> int3: the flame is a source of heat; int3 & sent18 & sent7 -> int4: the pan is...",
+          "metadata_char_count_premises": 1488
+        },
+        {
+          "input": "Premises:\nsent1: the coloration of parts of an animals are inherited characteristics sent2: to blend into something means to be difficult to see in something sent3: camouflage is used for protection b...",
+          "output": "Label: true\nProof: sent11 & sent9 -> int1: a rat snake is a kind of animal that is gray; sent1 & sent7 -> int2: coloration is a kind of adaptation; sent2 & sent23 -> int3: if a thing is the same color...",
+          "metadata_id": "eb_task_2_train_Mercury_7282118",
+          "metadata_benchmark": "entailmentbank",
+          "metadata_task": "task_2",
+          "metadata_gold_label": "true",
+          "metadata_proof_depth": 10,
+          "metadata_annotation_status": "ok",
+          "metadata_num_explicit": 17,
+          "metadata_num_implicit": 14,
+          "metadata_source_split": "train",
+          "metadata_explicit_predicates": "[\"the coloration of parts of an animals are inherited characteristics\", \"being protected from predators has a positive impact on an animal's survival\", \"a rat snake is gray\", \"an animal is a kind of o...",
+          "metadata_implicit_predicates": "[\"a rat snake is a kind of animal that is gray\", \"coloration is a kind of adaptation\", \"if a thing is the same color as another thing then that thing is difficult to see in that other thing\", \"a thing...",
+          "metadata_proof_tree": "sent11 & sent9 -> int1: a rat snake is a kind of animal that is gray; sent1 & sent7 -> int2: coloration is a kind of adaptation; sent2 & sent23 -> int3: if a thing is the same color as another thing t...",
+          "metadata_char_count_premises": 1537
+        },
+        {
+          "input": "Premises:\nsent1: renewable resources are often available for many years sent2: wind / wind energy is a renewable / inexhaustible resource sent3: renewable resources can be used over again sent4: a ren...",
+          "output": "Label: true\nProof: sent20 & sent23 -> int1: if something occurs by burning something else, then burning that something else is required for that something to occur; int1 & sent15 -> int2: using natura...",
+          "metadata_id": "eb_task_2_train_MDSA_2010_8_39",
+          "metadata_benchmark": "entailmentbank",
+          "metadata_task": "task_2",
+          "metadata_gold_label": "true",
+          "metadata_proof_depth": 9,
+          "metadata_annotation_status": "ok",
+          "metadata_num_explicit": 12,
+          "metadata_num_implicit": 10,
+          "metadata_source_split": "train",
+          "metadata_explicit_predicates": "[\"if something causes an increase in something else then that something produces that something else\", \"if something increases something else then decreasing that something will decrease that somethin...",
+          "metadata_implicit_predicates": "[\"if something occurs by burning something else, then burning that something else is required for that something to occur\", \"using natural gas to generate electricity requires burning that natural gas...",
+          "metadata_proof_tree": "sent20 & sent23 -> int1: if something occurs by burning something else, then burning that something else is required for that something to occur; int1 & sent15 -> int2: using natural gas to generate e...",
+          "metadata_char_count_premises": 1520
+        }
+      ]
+    },
+    {
+      "dataset": "entailmentbank_task3",
+      "examples": [
+        {
+          "input": "Premises:\nsent1: water is in the solid state , called ice , for temperatures between 0; -459; -273 and 273; 32; 0 k; f; c sent2: if one surface; one substance; one object touches something then one is...",
+          "output": "Label: true\nProof: sent14 & sent9 -> int1: a pan is a thermal conductor; sent10 & sent2 -> int2: the flame gives off heat; int2 & sent11 -> int3: the flame is a source of heat; int3 & sent1 & sent13 -...",
+          "metadata_id": "eb_task_3_train_Mercury_SC_413077",
+          "metadata_benchmark": "entailmentbank",
+          "metadata_task": "task_3",
+          "metadata_gold_label": "true",
+          "metadata_proof_depth": 12,
+          "metadata_annotation_status": "ok",
+          "metadata_num_explicit": 17,
+          "metadata_num_implicit": 12,
+          "metadata_source_split": "train",
+          "metadata_explicit_predicates": "[\"water is in the solid state , called ice , for temperatures between 0; -459; -273 and 273; 32; 0 k; f; c\", \"ice is a kind of solid\", \"fire gives off heat\", \"a pan;frying pan is a kind of container f...",
+          "metadata_implicit_predicates": "[\"a source of something gives off that something\", \"melting means a substance changes from a solid into a liquid by increasing heat energy\", \"a pan is made of metal for cooking\", \"if an object is expo...",
+          "metadata_proof_tree": "sent14 & sent9 -> int1: a pan is a thermal conductor; sent10 & sent2 -> int2: the flame gives off heat; int2 & sent11 -> int3: the flame is a source of heat; int3 & sent1 & sent13 -> int4: the pan is ...",
+          "metadata_char_count_premises": 1576
+        },
+        {
+          "input": "Premises:\nsent1: an example of camouflage is organism having the same color as its environment sent2: an example of camouflage is an organism looking like its environment sent3: a gravel pit is a kind...",
+          "output": "Label: true\nProof: sent11 & sent14 -> int1: a rat snake is a kind of animal that is gray; sent5 & sent6 -> int2: coloration is a kind of adaptation; sent1 & sent2 -> int3: if a thing is the same color...",
+          "metadata_id": "eb_task_3_train_Mercury_7282118",
+          "metadata_benchmark": "entailmentbank",
+          "metadata_task": "task_3",
+          "metadata_gold_label": "true",
+          "metadata_proof_depth": 10,
+          "metadata_annotation_status": "ok",
+          "metadata_num_explicit": 17,
+          "metadata_num_implicit": 11,
+          "metadata_source_split": "train",
+          "metadata_explicit_predicates": "[\"an example of camouflage is organism having the same color as its environment\", \"a gravel pit contains gravel\", \"a characteristic of something that is different for different kinds of that something...",
+          "metadata_implicit_predicates": "[\"things that are the same color blend into each other\", \"an environment is a kind of thing\", \"if something has a positive impact on an animal's survival then that animal will likely do that something...",
+          "metadata_proof_tree": "sent11 & sent14 -> int1: a rat snake is a kind of animal that is gray; sent5 & sent6 -> int2: coloration is a kind of adaptation; sent1 & sent2 -> int3: if a thing is the same color as another thing t...",
+          "metadata_char_count_premises": 1598
+        },
+        {
+          "input": "Premises:\nsent1: greenhouse gases are a part of the atmosphere sent2: a source of something produces that something sent3: water vapor is a kind of greenhouse gas sent4: converting is similar to gener...",
+          "output": "Label: true\nProof: sent4 & sent8 -> int1: if something occurs by burning something else, then burning that something else is required for that something to occur; int1 & sent6 -> int2: using natural g...",
+          "metadata_id": "eb_task_3_train_MDSA_2010_8_39",
+          "metadata_benchmark": "entailmentbank",
+          "metadata_task": "task_3",
+          "metadata_gold_label": "true",
+          "metadata_proof_depth": 9,
+          "metadata_annotation_status": "ok",
+          "metadata_num_explicit": 12,
+          "metadata_num_implicit": 10,
+          "metadata_source_split": "train",
+          "metadata_explicit_predicates": "[\"greenhouse gases are a part of the atmosphere\", \"using resources decreases those resources\", \"a source of something emits / produces / generates / provides that something\", \"fossil fuels burning cau...",
+          "metadata_implicit_predicates": "[\"fossil fuels are a nonrenewable resource\", \"natural gas is a kind of fossil fuel\", \"electricity is a kind of electrical power\", \"if something increases something else then decreasing that something ...",
+          "metadata_proof_tree": "sent4 & sent8 -> int1: if something occurs by burning something else, then burning that something else is required for that something to occur; int1 & sent6 -> int2: using natural gas to generate elec...",
+          "metadata_char_count_premises": 1389
+        }
+      ]
+    },
+    {
+      "dataset": "proofwriter_depth3",
+      "examples": [
+        {
+          "input": "Premises:\nAnne is furry. Anne is green. Anne is round. Bob is quiet. Bob is smart. Erin is furry. Erin is smart. Harry is blue. Harry is quiet. Harry is round. Big people are blue. Furry, quiet people...",
+          "output": "Label: true\nProof: @0: Anne is furry.[(triple1)] Anne is green.[(triple2)] Anne is round.[(triple3 OR ((triple2 triple1) -> rule6))] Bob is quiet.[(triple4 OR ((((triple5) -> rule3)) -> rule4))] Bob i...",
+          "metadata_id": "pw_depth_3_AttNoneg-OWA-D3-1136",
+          "metadata_benchmark": "proofwriter",
+          "metadata_task": "depth_3",
+          "metadata_gold_label": "true",
+          "metadata_proof_depth": 5,
+          "metadata_annotation_status": "ok",
+          "metadata_num_explicit": 7,
+          "metadata_num_implicit": 3,
+          "metadata_source_split": "train",
+          "metadata_explicit_predicates": "[\"Anne is furry.\", \"Anne is green.\", \"Bob is smart.\", \"Erin is furry.\", \"Erin is smart.\", \"Harry is blue.\", \"Harry is round.\"]",
+          "metadata_implicit_predicates": "[\"Anne is round.\", \"Bob is quiet.\", \"Harry is quiet.\"]",
+          "metadata_proof_tree": "@0: Anne is furry.[(triple1)] Anne is green.[(triple2)] Anne is round.[(triple3 OR ((triple2 triple1) -> rule6))] Bob is quiet.[(triple4 OR ((((triple5) -> rule3)) -> rule4))] Bob is smart.[(triple5)]...",
+          "metadata_char_count_premises": 322
+        },
+        {
+          "input": "Premises:\nAnne is furry. Anne is green. Anne is round. Bob is quiet. Bob is smart. Erin is furry. Erin is smart. Harry is blue. Harry is quiet. Harry is round. Big people are blue. Furry, quiet people...",
+          "output": "Label: false\nProof: @0: Anne is furry.[(triple1)] Anne is green.[(triple2)] Anne is round.[(triple3 OR ((triple2 triple1) -> rule6))] Bob is quiet.[(triple4 OR ((((triple5) -> rule3)) -> rule4))] Bob ...",
+          "metadata_id": "pw_depth_3_AttNoneg-OWA-D3-1136",
+          "metadata_benchmark": "proofwriter",
+          "metadata_task": "depth_3",
+          "metadata_gold_label": "false",
+          "metadata_proof_depth": 5,
+          "metadata_annotation_status": "ok",
+          "metadata_num_explicit": 7,
+          "metadata_num_implicit": 3,
+          "metadata_source_split": "train",
+          "metadata_explicit_predicates": "[\"Anne is furry.\", \"Anne is green.\", \"Bob is smart.\", \"Erin is furry.\", \"Erin is smart.\", \"Harry is blue.\", \"Harry is round.\"]",
+          "metadata_implicit_predicates": "[\"Anne is round.\", \"Bob is quiet.\", \"Harry is quiet.\"]",
+          "metadata_proof_tree": "@0: Anne is furry.[(triple1)] Anne is green.[(triple2)] Anne is round.[(triple3 OR ((triple2 triple1) -> rule6))] Bob is quiet.[(triple4 OR ((((triple5) -> rule3)) -> rule4))] Bob is smart.[(triple5)]...",
+          "metadata_char_count_premises": 322
+        },
+        {
+          "input": "Premises:\nAnne is furry. Anne is green. Anne is round. Bob is quiet. Bob is smart. Erin is furry. Erin is smart. Harry is blue. Harry is quiet. Harry is round. Big people are blue. Furry, quiet people...",
+          "output": "Label: true\nProof: @0: Anne is furry.[(triple1)] Anne is green.[(triple2)] Anne is round.[(triple3 OR ((triple2 triple1) -> rule6))] Bob is quiet.[(triple4 OR ((((triple5) -> rule3)) -> rule4))] Bob i...",
+          "metadata_id": "pw_depth_3_AttNoneg-OWA-D3-1136",
+          "metadata_benchmark": "proofwriter",
+          "metadata_task": "depth_3",
+          "metadata_gold_label": "true",
+          "metadata_proof_depth": 5,
+          "metadata_annotation_status": "ok",
+          "metadata_num_explicit": 7,
+          "metadata_num_implicit": 3,
+          "metadata_source_split": "train",
+          "metadata_explicit_predicates": "[\"Anne is furry.\", \"Anne is green.\", \"Bob is smart.\", \"Erin is furry.\", \"Erin is smart.\", \"Harry is blue.\", \"Harry is round.\"]",
+          "metadata_implicit_predicates": "[\"Anne is round.\", \"Bob is quiet.\", \"Harry is quiet.\"]",
+          "metadata_proof_tree": "@0: Anne is furry.[(triple1)] Anne is green.[(triple2)] Anne is round.[(triple3 OR ((triple2 triple1) -> rule6))] Bob is quiet.[(triple4 OR ((((triple5) -> rule3)) -> rule4))] Bob is smart.[(triple5)]...",
+          "metadata_char_count_premises": 322
+        }
+      ]
+    }
+  ]
+}
